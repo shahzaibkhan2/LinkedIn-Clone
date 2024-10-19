@@ -1,3 +1,5 @@
+import { LeftNav, MiddleNav, RightNav } from "..";
+
 const Navbar = () => {
   const { stickyNav } = useMainContext();
 
