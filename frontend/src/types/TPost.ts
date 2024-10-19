@@ -4,8 +4,6 @@ import { ReactNode } from "react";
 
 export type TMainContext = {
   postData: IPostData[];
-  setStickyNav: React.Dispatch<React.SetStateAction<string>>;
-  stickyNav: string;
   underline: string;
   setUnderline: React.Dispatch<React.SetStateAction<string>>;
   chatUnderline: string;
