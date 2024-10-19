@@ -1,12 +1,14 @@
+import { StaticImageData } from "next/image";
+
 export interface IPostMedia {
-  front: string;
-  sideOne: string;
-  sideTwo: string;
-  sideThree: string;
+  front: StaticImageData;
+  sideOne: StaticImageData;
+  sideTwo: StaticImageData;
+  sideThree: StaticImageData;
 }
 
 export interface IPostData {
-  profileImg: string;
+  profileImg: StaticImageData;
   title: string;
   followers: number;
   postTime: number;

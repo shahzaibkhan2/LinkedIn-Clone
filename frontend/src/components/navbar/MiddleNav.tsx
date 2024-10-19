@@ -3,12 +3,14 @@ import { HiUsers } from "react-icons/hi2";
 import { MdWork } from "react-icons/md";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { BiSolidBell } from "react-icons/bi";
-import { useMainContext } from "../../hooks/customHooks";
-import { assets } from "../../assets/assets";
+
 import { IoMdArrowDropdown } from "react-icons/io";
+import { useHomeContext } from "@/hooks/useHomeContext";
+import { assets } from "@/data/homeData";
+import Image from "next/image";
 
 const MiddleNav = () => {
-  const { underline, setUnderline } = useMainContext();
+  const { underline, setUnderline } = useHomeContext();
   return (
     <section className="flex gap-5 sm:gap-8">
       <div
@@ -63,7 +65,7 @@ const MiddleNav = () => {
         </p>
       </div>
       <div className="hidden sm:flex flex-col items-center justify-center text-[#00000099] text-[12px]">
-        <img src={assets.me} alt="profile-picture" className="w-7" />
+        <Image src={assets.me} alt="profile-picture" className="w-7" />
         <div className="flex justify-center items-center">
           <p className="hidden md-xl:block text-[#00000099] text-[12px]">Me</p>
           <IoMdArrowDropdown className="text-[#00000099] w-6 h-6" />

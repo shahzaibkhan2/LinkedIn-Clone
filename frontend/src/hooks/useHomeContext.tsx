@@ -1,3 +1,4 @@
+"use client";
 import { HomeContext } from "@/context/HomeContext";
 import { useContext } from "react";
 

@@ -9,6 +9,7 @@ import p3 from "@/assets/images/p3.jpg";
 import pr1 from "@/assets/images/pr1.jpg";
 import pr2 from "@/assets/images/pr2.jpg";
 import pr3 from "@/assets/images/pr3.jpg";
+import { IPostData } from "@/interfaces/IHomeContext";
 
 export const assets = {
   p1,
@@ -32,7 +33,7 @@ export const tempPostData = {
   reposts: 3,
 };
 
-export const postDataAssets = [
+export const postDataAssets: IPostData[] = [
   {
     profileImg: pr1,
     title: "NovaTech",

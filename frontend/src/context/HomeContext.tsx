@@ -1,3 +1,5 @@
+"use client";
+
 import { postDataAssets } from "@/data/homeData";
 import { IPostData } from "@/interfaces/IHomeContext";
 import { TChildren, TMainContext } from "@/types/TPost";
