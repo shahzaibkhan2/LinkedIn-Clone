@@ -1,4 +1,3 @@
-"use client";
 import PostTitle from "./PostTitle";
 import PostDesc from "./PostDesc";
 import PostMedia from "./PostMedia";
@@ -6,11 +5,10 @@ import PostPerk from "./PostPerk";
 import PostActivity from "./PostActivity";
 import PostActionActivity from "./PostActionActivity";
 import { IPostData } from "@/interfaces/IHomeContext";
-import { useHomeContext } from "@/hooks/useHomeContext";
+import { postDataAssets } from "@/data/homeData";
 
 const Post = () => {
-  const { postData } = useHomeContext();
-  return postData.map((post: IPostData, index: number) => {
+  return postDataAssets.map((post: IPostData, index: number) => {
     return (
       <article key={index} className="bg-white mt-10 rounded-lg">
         <PostTitle

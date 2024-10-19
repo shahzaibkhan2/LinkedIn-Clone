@@ -8,6 +8,7 @@ import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { assets } from "@/data/homeData";
 import Image from "next/image";
+import Link from "next/link";
 
 const MiddleNav = () => {
   const [underline, setUnderline] = useState("home");
@@ -65,13 +66,16 @@ const MiddleNav = () => {
           Notifications
         </p>
       </div>
-      <div className="hidden sm:flex flex-col items-center justify-center text-[#00000099] text-[12px]">
+      <Link
+        href="/profile"
+        className="hidden sm:flex flex-col items-center justify-center text-[#00000099] text-[12px] cursor-pointer"
+      >
         <Image src={assets.me} alt="profile-picture" className="w-7" />
         <div className="flex justify-center items-center">
           <p className="hidden md-xl:block text-[#00000099] text-[12px]">Me</p>
           <IoMdArrowDropdown className="text-[#00000099] w-6 h-6" />
         </div>
-      </div>
+      </Link>
     </section>
   );
 };
