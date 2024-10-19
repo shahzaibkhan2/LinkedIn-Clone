@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Navbar, Post } from "@/components";
 import HomeContextProvider from "@/context/HomeContext";
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
           <p>Hello</p>
         </section>
         <section className="col-span-12 sm:col-span-8 lg-1:col-span-6 rounded-lg w-full">
-          <h1>Hello</h1>
+          <Post />
         </section>
         <section className="col-span-3 rounded-lg min-h-screen hidden lg-1:block">
           <h2>Wow</h2>

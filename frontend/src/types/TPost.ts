@@ -1,4 +1,5 @@
 import { IPostData, IPostMedia } from "@/interfaces/IHomeContext";
+import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export type TMainContext = {
@@ -35,8 +36,8 @@ export type TPostPerkProps = {
   desc: string;
 };
 
-export type TPosttittleProps = {
-  profileImg: string;
+export type TPosttitleProps = {
+  profileImg: StaticImageData;
   title: string;
   followers: number;
   postTime: number;
