@@ -4,14 +4,14 @@ import { HiUsers } from "react-icons/hi2";
 import { MdWork } from "react-icons/md";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { BiSolidBell } from "react-icons/bi";
-
+import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { useHomeContext } from "@/hooks/useHomeContext";
 import { assets } from "@/data/homeData";
 import Image from "next/image";
 
 const MiddleNav = () => {
-  const { underline, setUnderline } = useHomeContext();
+  const [underline, setUnderline] = useState("home");
+
   return (
     <section className="flex gap-5 sm:gap-8">
       <div

@@ -4,8 +4,6 @@ import { ReactNode } from "react";
 
 export type TMainContext = {
   postData: IPostData[];
-  underline: string;
-  setUnderline: React.Dispatch<React.SetStateAction<string>>;
   chatUnderline: string;
   setChatUnderline: React.Dispatch<React.SetStateAction<string>>;
   miniChat: boolean;

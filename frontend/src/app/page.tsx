@@ -2,7 +2,6 @@ import {
   AddFeed,
   Footer,
   LeftProfile,
-  Navbar,
   Post,
   Recent,
   Status,
@@ -12,7 +11,6 @@ import HomeContextProvider from "@/context/HomeContext";
 const Home = () => {
   return (
     <HomeContextProvider>
-      <Navbar />
       <main className="grid grid-cols-12 w-ful mx-auto px-[5%] lg:px-[10%] gap-6 mt-20">
         <section className="hidden sm:block sm:col-span-4 lg-1:col-span-3 rounded-lg">
           <LeftProfile />

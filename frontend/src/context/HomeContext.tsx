@@ -13,7 +13,7 @@ const HomeContextProvider = ({ children }: TChildren) => {
   // <------------------------------ States ---------------------------------->
 
   const [postData, setPostData] = useState<IPostData[]>(postDataAssets);
-  const [underline, setUnderline] = useState("home");
+
   const [chatUnderline, setChatUnderline] = useState("focused");
   const [miniChat, setMiniChat] = useState(true);
 
@@ -24,8 +24,6 @@ const HomeContextProvider = ({ children }: TChildren) => {
   const contextValues = {
     postData,
     setPostData,
-    underline,
-    setUnderline,
     chatUnderline,
     setChatUnderline,
     miniChat,
