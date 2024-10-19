@@ -1,4 +1,3 @@
-"use client";
 import { LeftNav, MiddleNav, RightNav } from "..";
 
 const Navbar = () => {

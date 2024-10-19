@@ -1,3 +1,4 @@
+"use client";
 import { IoHome } from "react-icons/io5";
 import { HiUsers } from "react-icons/hi2";
 import { MdWork } from "react-icons/md";
