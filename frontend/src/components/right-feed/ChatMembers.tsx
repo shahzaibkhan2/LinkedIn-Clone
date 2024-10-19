@@ -1,11 +1,12 @@
-import { assets } from "../../assets/assets";
+import { assets } from "@/data/homeData";
+import Image from "next/image";
 
 const ChatMembers = () => {
   return (
     <section className="flex justify-between items-center p-2">
       <div className="flex justify-between gap-2 items-center">
         <div className="size-12 rounded-full after:size-3 after:bg-white after:border-4 after:border-[#238766] after:absolute after:right-0 after:bottom-0 after:rounded-full relative">
-          <img
+          <Image
             src={assets.me}
             className="size-full rounded-full"
             alt="profile-image"

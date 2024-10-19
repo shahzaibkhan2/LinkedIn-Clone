@@ -1,7 +1,8 @@
-import { useMainContext } from "../../hooks/customHooks";
+"use client";
+import { useHomeContext } from "@/hooks/useHomeContext";
 
 const MembersTypes = () => {
-  const { chatUnderline, setChatUnderline } = useMainContext();
+  const { chatUnderline, setChatUnderline } = useHomeContext();
   return (
     <section className="flex justify-between text-medium font-semibold border-b-[0.5px]">
       <div

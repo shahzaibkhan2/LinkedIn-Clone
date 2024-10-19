@@ -1,4 +1,5 @@
-import { assets } from "../../assets/assets";
+import { assets } from "@/data/homeData";
+import Image from "next/image";
 import { BsImage } from "react-icons/bs";
 import { MdOutlineMessage } from "react-icons/md";
 import { PiArticleMedium } from "react-icons/pi";
@@ -7,7 +8,7 @@ const Status = () => {
   return (
     <article className="px-[3%] py-[2%] flex flex-col bg-white rounded-lg gap-2 w-full">
       <div className="flex gap-2 items-center">
-        <img
+        <Image
           src={assets.me}
           alt="profile-image"
           className="size-12 rounded-full"

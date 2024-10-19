@@ -1,15 +1,17 @@
-import { assets } from "../../assets/assets";
+"use client";
 import { HiDotsHorizontal } from "react-icons/hi";
 import { MdOutlineOpenInNew } from "react-icons/md";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { useMainContext } from "../../hooks/customHooks";
+import { useHomeContext } from "@/hooks/useHomeContext";
+import { assets } from "@/data/homeData";
+import Image from "next/image";
 
 const ChatHeader = () => {
-  const { setMiniChat, miniChat } = useMainContext();
+  const { setMiniChat, miniChat } = useHomeContext();
   return (
     <section className="flex justify-between items-center p-2">
       <div className="flex gap-1 items-center">
-        <img src={assets.me} className="size-8" alt="profile-image" />
+        <Image src={assets.me} className="size-8" alt="profile-image" />
         <p className="text-e6-color text-medium font-semibold">Messages</p>
       </div>
       <div className="flex gap-2">

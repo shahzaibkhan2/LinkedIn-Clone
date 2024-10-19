@@ -1,11 +1,9 @@
-import ChatMembers from "./ChatMembers";
-import MembersTypes from "./MembersTypes";
-import ChatInput from "./ChatInput";
-import ChatHeader from "./ChatHeader";
-import { useMainContext } from "../../hooks/customHooks";
+"use client";
+import { useHomeContext } from "@/hooks/useHomeContext";
+import { ChatHeader, ChatInput, ChatMembers, MembersTypes } from "..";
 
 const Chat = () => {
-  const { miniChat } = useMainContext();
+  const { miniChat } = useHomeContext();
 
   return (
     <article

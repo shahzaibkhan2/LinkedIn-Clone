@@ -1,4 +1,5 @@
-import { assets } from "../../assets/assets";
+import { assets } from "@/data/homeData";
+import Image from "next/image";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 const Footer = () => {
@@ -39,7 +40,7 @@ const Footer = () => {
       <div className="flex gap-2 items-center text-nowrap">
         <div className="flex items-center">
           <span className="font-bold text-[#0077b5]">Linked</span>
-          <img
+          <Image
             src={assets.linkedinLogo}
             alt="linkedin-logo"
             className="size-4"
