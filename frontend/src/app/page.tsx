@@ -1,5 +1,3 @@
-import React from "react";
-
 const Home = () => {
   return (
     <main className="grid grid-cols-12 w-ful mx-auto px-[5%] lg:px-[10%] mt-6 gap-6">
