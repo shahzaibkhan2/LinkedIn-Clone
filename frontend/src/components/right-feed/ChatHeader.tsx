@@ -11,7 +11,11 @@ const ChatHeader = () => {
   return (
     <section className="flex justify-between items-center p-2">
       <div className="flex gap-1 items-center">
-        <Image src={assets.me} className="size-8" alt="profile-image" />
+        <Image
+          src={assets.p2}
+          className="size-8 object-cover rounded-full"
+          alt="profile-image"
+        />
         <p className="text-e6-color text-medium font-semibold">Messages</p>
       </div>
       <div className="flex gap-2">

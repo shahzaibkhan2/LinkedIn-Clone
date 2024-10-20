@@ -9,9 +9,9 @@ const Status = () => {
     <article className="px-[3%] py-[2%] flex flex-col bg-white rounded-lg gap-2 w-full">
       <div className="flex gap-2 items-center">
         <Image
-          src={assets.me}
+          src={assets.p2}
           alt="profile-image"
-          className="size-12 rounded-full"
+          className="size-12 rounded-full object-cover"
         />
         <p className="text-icon-black border border-gray-400 px-6 py-3 rounded-full w-full hover:bg-gray-100 transition duration-300 cursor-pointer">
           Start a post, try writing with AI

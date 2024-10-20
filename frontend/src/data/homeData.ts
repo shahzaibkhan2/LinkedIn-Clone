@@ -1,4 +1,3 @@
-import me from "@/assets/images/shahzaib.jpg";
 import bgImg from "@/assets/images/background-img.webp";
 import reactLogo from "@/assets/images/react.png";
 import linkedinLogo from "@/assets/images/connection.png";
@@ -16,12 +15,11 @@ export const assets = {
   p2,
   linkedinLogo,
   reactLogo,
-  me,
   bgImg,
 };
 
 export const tempPostData = {
-  imgPath: me,
+  imgPath: p2,
   title: "NovaTech",
   followers: 100,
   postTime: 32,

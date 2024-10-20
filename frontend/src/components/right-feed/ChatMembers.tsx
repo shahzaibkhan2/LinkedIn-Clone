@@ -7,8 +7,8 @@ const ChatMembers = () => {
       <div className="flex justify-between gap-2 items-center">
         <div className="size-12 rounded-full after:size-3 after:bg-white after:border-4 after:border-[#238766] after:absolute after:right-0 after:bottom-0 after:rounded-full relative">
           <Image
-            src={assets.me}
-            className="size-full rounded-full"
+            src={assets.p2}
+            className="size-full object-cover rounded-full"
             alt="profile-image"
           />
         </div>
