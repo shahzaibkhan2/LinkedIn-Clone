@@ -1,10 +1,13 @@
 import Link from "next/link";
 
-const UserProfilePopup = ({ isPoppedup }: { isPoppedup: boolean }) => {
+const UserProfilePopup = ({
+  showUserPopup,
+  setShowUserPopup,
+}: TUserProfilePopup) => {
   return (
     <nav
       className={`${
-        isPoppedup ? "block" : "hidden"
+        showUserPopup ? "block" : "hidden"
       } absolute -right-20 transition duration-300 w-72 mt-2 bg-white text-gray-800 border border-gray-300 rounded-lg shadow-lg py-2 z-10 p-2`}
     >
       <div className="flex gap-4 mb-3">
@@ -26,6 +29,7 @@ const UserProfilePopup = ({ isPoppedup }: { isPoppedup: boolean }) => {
         </div>
       </div>
       <Link
+        onClick={() => setShowUserPopup(false)}
         href="/profile"
         className="flex items-center justify-center w-full px-2 bg-transparent border border-blue-700 text-blue-700 hover:ring-1 ring-blue-800 transition duration-200 rounded-full"
       >
