@@ -13,9 +13,9 @@ const LeftProfile = () => {
             className="w-full h-16 object-cover overflow-hidden rounded-t-lg"
           />
           <Image
-            src={assets.me}
+            src={assets.p2}
             alt="profile-picture"
-            className="size-20 absolute top-[8%] right-[30%] xl:right-[35%] object-cover overflow-hidden rounded-full"
+            className="size-20 absolute top-[8%] right-[30%] xl:right-[35%] object-cover overflow-hidden rounded-full ring-1 ring-white"
           />
         </div>
         <div className="flex flex-col mt-14 text-center gap-2">

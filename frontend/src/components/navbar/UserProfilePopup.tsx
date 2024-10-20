@@ -1,3 +1,5 @@
+import { assets } from "@/data/homeData";
+import Image from "next/image";
 import Link from "next/link";
 
 const UserProfilePopup = ({
@@ -12,8 +14,8 @@ const UserProfilePopup = ({
     >
       <div className="flex gap-4 mb-3">
         <div className="size-14">
-          <img
-            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
+          <Image
+            src={assets.p2}
             alt="tania andrew"
             className="relative inline-block object-cover object-center size-full rounded-full"
           />

@@ -78,7 +78,11 @@ const MiddleNav = () => {
           onClick={() => setShowUserPopup((prev) => !prev)}
           className="hidden sm:flex flex-col items-center justify-center text-[#00000099] text-[12px] cursor-pointer"
         >
-          <Image src={assets.me} alt="profile-picture" className="w-7" />
+          <Image
+            src={assets.p2}
+            alt="profile-picture"
+            className="size-7 rounded-full object-cover"
+          />
           <div className="flex justify-center items-center">
             <p className="hidden md-xl:block text-[#00000099] text-[12px]">
               Me
