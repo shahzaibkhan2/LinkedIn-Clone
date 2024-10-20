@@ -9,6 +9,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { assets } from "@/data/homeData";
 import Image from "next/image";
 import UserProfilePopup from "./UserProfilePopup";
+import Link from "next/link";
 
 const MiddleNav = () => {
   const [underline, setUnderline] = useState("home");
@@ -17,7 +18,8 @@ const MiddleNav = () => {
   return (
     <header className="relative">
       <nav className="flex gap-5 sm:gap-8">
-        <div
+        <Link
+          href="/"
           onClick={() => setUnderline("home")}
           className={`flex flex-col pl-1 items-center justify-center ${
             underline === "home" && "underline underline-offset-7"
@@ -27,7 +29,7 @@ const MiddleNav = () => {
           <p className="hidden md-xl:block text-[#00000099] text-[12px]">
             Home
           </p>
-        </div>
+        </Link>
         <div
           onClick={() => setUnderline("networks")}
           className={`flex flex-col items-center justify-center h-full ${
@@ -85,7 +87,10 @@ const MiddleNav = () => {
           </div>
         </div>
       </nav>
-      <UserProfilePopup isPoppedup={showUserPopup} />
+      <UserProfilePopup
+        showUserPopup={showUserPopup}
+        setShowUserPopup={setShowUserPopup}
+      />
     </header>
   );
 };
