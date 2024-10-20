@@ -8,7 +8,17 @@ const Profile = () => {
       </section>
 
       <section className="col-span-3 rounded-lg min-h-screen bg-blue-200">
-        <h1>Hello world</h1>
+        <div className="p-3 space-y-3">
+          <div>
+            <h2>Profile</h2>
+            <p>Text</p>
+          </div>
+          <hr />
+          <div>
+            <h2>Profile</h2>
+            <p>Text</p>
+          </div>
+        </div>
       </section>
     </main>
   );
