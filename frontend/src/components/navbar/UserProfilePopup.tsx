@@ -33,7 +33,7 @@ const UserProfilePopup = ({
       <Link
         onClick={() => setShowUserPopup(false)}
         href="/profile"
-        className="flex items-center justify-center w-full px-2 bg-transparent border border-blue-700 text-blue-700 hover:ring-1 ring-blue-800 transition duration-200 rounded-full"
+        className="flex items-center justify-center w-full px-2 bg-transparent border border-blue-700 text-blue-700 hover:ring-1 ring-blue-800 hover:bg-blue-100 transition duration-200 rounded-full"
       >
         View Profile
       </Link>

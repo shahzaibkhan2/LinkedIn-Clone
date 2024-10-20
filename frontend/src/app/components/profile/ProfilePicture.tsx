@@ -12,8 +12,8 @@ const ProfilePicture = () => {
           className="size-[95%] rounded-full object-cover"
         />
       </div>
-      <div className="absolute top-5 right-5 size-8 rounded-full bg-white flex items-center justify-center">
-        <ImPencil className="text-blue-700 size-4" />
+      <div className="absolute top-5 right-5 size-8 rounded-full bg-white flex items-center justify-center cursor-pointer">
+        <ImPencil className="text-blue-700 size-4 hover:text-blue-800 transition duration-300" />
       </div>
       <Image
         src={assets.bgImg}
