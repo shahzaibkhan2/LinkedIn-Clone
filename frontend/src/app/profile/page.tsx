@@ -1,5 +1,6 @@
 import ProfilePicture from "../components/profile/ProfilePicture";
 import ProfileTitles from "../components/profile/ProfileTitles";
+import ProfileWork from "../components/profile/ProfileWork";
 
 const Profile = () => {
   return (
@@ -7,6 +8,7 @@ const Profile = () => {
       <section className="col-span-9 rounded-lg bg-white border border-gray-300">
         <ProfilePicture />
         <ProfileTitles />
+        <ProfileWork />
       </section>
 
       <section className="col-span-3 rounded-lg min-h-screen bg-blue-200">
