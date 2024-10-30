@@ -7,7 +7,7 @@ import CommonButton from "@/components/buttons/CommonButton";
 
 const ProfileTitles = () => {
   return (
-    <article className="mt-20 flex items-center justify-between pl-10 pr-9">
+    <article className="mt-20 flex justify-between pl-10 pr-9">
       <div className="flex flex-col gap-1">
         <div className="flex items-center gap-3 w-[460px]">
           <h3 className="text-gray-800 font-semibold text-2xl">
@@ -46,7 +46,7 @@ const ProfileTitles = () => {
           </CommonButton>
         </div>
       </div>
-      <div className="flex items-center gap-3 relative">
+      <div className="flex items-start gap-3 relative">
         <div className="absolute -top-14 -right-1 flex items-center justify-center size-10 hover:bg-gray-200 transition duration-300 rounded-full cursor-pointer">
           <BiPencil className="text-gray-800 size-7" />
         </div>
