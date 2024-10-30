@@ -10,7 +10,7 @@ const ProfileRightUrl = () => {
               Profile language
             </h2>
 
-            <ImPencil className="size-4 transition duration-300" />
+            <ImPencil className="size-4 transition duration-300 cursor-pointer" />
           </div>
           <p className="text-gray-500">English</p>
         </div>
@@ -20,7 +20,7 @@ const ProfileRightUrl = () => {
             <h2 className="font-semibold text-lg text-gray-600">
               Public profile & URL
             </h2>
-            <ImPencil className="size-4 transition duration-300" />
+            <ImPencil className="size-4 transition duration-300 cursor-pointer" />
           </div>
           <p className="text-gray-500">
             www.linkedin.com/in/engr-shahzaib-khan1

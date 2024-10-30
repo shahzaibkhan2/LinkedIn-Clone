@@ -1,6 +1,7 @@
 import { assets } from "@/data/homeData";
 import Image from "next/image";
 import { IoMdAdd } from "react-icons/io";
+import Follow from "../buttons/Follow";
 
 const Company = () => {
   return (
@@ -12,10 +13,7 @@ const Company = () => {
           <p className="w-full text-small text-[#00000099]">
             Company • IT Services and IT Consulting
           </p>
-          <button className="flex gap-1 items-center border border-[#000000bf] rounded-full px-3 py-[2.5px] w-max justify-between mt-2">
-            <IoMdAdd className="text-icon-black size-5" />
-            <span className="font-semibold text-icon-black">Follow</span>
-          </button>
+          <Follow />
         </div>
       </div>
     </article>

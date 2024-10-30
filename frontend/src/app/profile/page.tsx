@@ -3,6 +3,7 @@ import {
   ProfileRightUrl,
   ProfileTitles,
   ProfileWork,
+  SuggestedProfiles,
 } from "../components";
 
 const Profile = () => {
@@ -16,6 +17,7 @@ const Profile = () => {
 
       <section className="col-span-3 rounded-lg min-h-screen">
         <ProfileRightUrl />
+        <SuggestedProfiles />
       </section>
     </main>
   );
