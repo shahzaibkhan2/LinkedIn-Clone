@@ -17,7 +17,8 @@ const Profile = () => {
 
       <section className="col-span-3 rounded-lg min-h-screen">
         <ProfileRightUrl />
-        <SuggestedProfiles />
+        <SuggestedProfiles suggestTitle="More profiles for you" />
+        <SuggestedProfiles suggestTitle="People you may know" />
       </section>
     </main>
   );

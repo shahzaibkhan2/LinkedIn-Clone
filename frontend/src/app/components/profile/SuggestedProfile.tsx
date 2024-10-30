@@ -12,7 +12,7 @@ const SuggestedProfile = () => {
       />
       <div className="flex flex-col">
         <h3 className="text-gray-700 font-semibold">Shahzaib Khan</h3>
-        <p className="line-clamp-2 text-gray-600 text-sm">
+        <p className="line-clamp-2 text-gray-800 text-sm">
           Full Stack MERN Developer | Frontend in React & Next.js | Redux
           Toolkit for State Management | JavaScript & TypeScript
         </p>
